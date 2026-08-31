@@ -1,13 +1,18 @@
 <template>
-  <products-page />
+  <div>
+    <navigation />
+    <router-view></router-view>
+    <footer />
+  </div>
 </template>
 
 <script>
-import Page from "@/components/Products/Page.vue";
+import Navigation from "@/components/Partials/navigation.vue";
+import Footer from "@/components/Partials/footer.vue";
 
 export default {
   name: 'App',
-  components: { ProductsPage: Page },
+  components: {Footer, Navigation},
   provide() {
     return {
       productList: this.productList
@@ -49,4 +54,3 @@ export default {
   })
 }
 </script>
-

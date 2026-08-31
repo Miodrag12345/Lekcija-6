@@ -1,10 +1,11 @@
 <template>
-<p>{{product.name}}</p>
+  <div>
+    <p>{{ product.name }}</p>
 
-  <p v-if="product.discount === null">{{product.price}}</p>
+    <p v-if="product.discount === null">{{ product.price }}</p>
 
-  <p v-else>{{product.price}}->{{getDiscountedPrice(product)}}</p>
-
+    <p v-else>{{ product.price }} -> {{ getDiscountedPrice(product) }}</p>
+  </div>
 </template>
 
 

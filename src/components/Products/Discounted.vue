@@ -1,30 +1,29 @@
 <template>
-<h1>Discounted Products </h1>
-  <div class="discounted " v-for="product in discountedProducts" :key ="product.id">
-    <ProductInfo :product="product" />
+  <div>
+    <h1>Discounted Products</h1>
+    <div class="discounted" v-for="product in discountedProducts" :key="product.id">
+      <ProductInfo :product="product" />
+    </div>
   </div>
-
 </template>
 
 <script>
-
-
 import Info from "@/components/Products/Info.vue";
 
-export  default {
+export default {
   name: "DiscountedProducts",
-  components: {ProductInfo: Info},
+  components: { ProductInfo: Info },
   inject: ['productList'],
-  computed:{
+  computed: {
     discountedProducts() {
-      return this.productsList.filter(product=>product.discount != null)
+      return this.productList.filter(product => product.discount != null)
     }
   }
 }
 </script>
 
 <style scoped>
-.discounted{
-  background-color:red
+.discounted {
+  background-color: red
 }
 </style>
