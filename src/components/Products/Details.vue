@@ -20,3 +20,5 @@ export default {
   }
 }
 </script>
+
+<style  src="@/assets/partials/productDetails.css"></style>

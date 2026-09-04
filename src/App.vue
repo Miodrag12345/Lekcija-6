@@ -3,7 +3,10 @@
     <navigation />
     <router-view></router-view>
     <footer />
+
   </div>
+
+
 </template>
 
 <script>
@@ -54,3 +57,7 @@ export default {
   })
 }
 </script>
+
+<style src="./assets/css/main.css">
+
+</style>

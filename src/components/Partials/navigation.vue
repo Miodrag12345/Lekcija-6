@@ -1,6 +1,7 @@
 <template>
 <nav>
   <router-link to="{name:Home }">HomePage</router-link>
+
 </nav>
 </template>
 
@@ -10,3 +11,6 @@ export default {
 }
 
 </script>
+
+<style scoped src="@/assets/partials/navigation.css"></style>
+
