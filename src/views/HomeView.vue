@@ -1,20 +1,20 @@
 
 <template>
   <div>
-    <DiscountedProducts />
-    <ProductsDetails />
+    <ListProducts type="discounted"></ListProducts>
+    <ListProducts type="not_discounted"></ListProducts>
   </div>
 </template>
 
 
 <script>
 
-import ProductsDetails from "@/components/Products/Details.vue";
-import DiscountedProducts from "@/components/Products/Discounted.vue";
+
+import ListProducts from "@/components/Products/ListProducts.vue";
 
 export default {
   name:'HomeView',
-  components: {DiscountedProducts, ProductsDetails},
+  components: {ListProducts},
 
 }
 
